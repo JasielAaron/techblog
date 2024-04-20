@@ -1,8 +1,8 @@
 const { Blog } = require('../models');
 const blogData = [
   {
-    title: 'Random Title',
-    content: 'Random Comment',
+    title: 'Scarlett With',
+    content: 'Scarlet Witch Aka Wanda Maximoff is a mutan she is trying to find her sons Billy and Tommy. ',
     user_id: 1,
   },
 ];

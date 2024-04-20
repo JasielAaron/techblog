@@ -1,10 +1,15 @@
 <form id="hero-form">
-  <h1>Create new Hero</h1>
-  <label>Hero Name</label>
-  <input type="text" id="heroName">
-  <label>Hero Story</label>
-  <input type="text" id="heroStory">
-  <button type="submit">Submit</button>
+  <h1>Write About Your Favorite Hero</h1>
+  <div class="mb-3">
+    <label class="hero-info form-label">Hero Name</label>
+    <input class="bloginput form-control" type="text" id="heroName">
+  </div>
+  <div class="mb-3">
+    <label class="hero-info form-label">Hero Story</label>
+    <input class="bloginput form-control" type="text" id="heroStory">
+  </div>
+
+  <button class="blogsubmitbutton btn btn-dark" type="submit">Submit</button>
 </form>
 
 <script src="/js/create.js">

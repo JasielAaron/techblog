@@ -1,0 +1,30 @@
+<div class="container">
+<div class="card">
+  <div class="card-body">
+<h2 class="card-header">
+  {{blog.title}}
+</h2>
+
+<p>{{blog.content}}</p>
+<h2>Created By: {{blog.user.username}}</h2>
+  </div>
+</div>
+
+
+<form class="comment-form">
+  <input class="form-control" type="text" id="comment" placeholder="add comment">
+  <input type="hidden" name="blog_id" id="blog_id" value="{{blog.id}}">
+  <button class="btn btn-dark" type="submit">Submit</button>
+</form>
+{{#each blog.comments as |comment| }}
+<div class="card">
+  <div class="card-body">
+<p>{{comment.comment}}</p>
+  <p>Created By: {{comment.user.username}}</p>
+  <p>{{comment.create_on_date}}</p>
+  </div>
+  
+</div>
+{{/each}}
+</div>
+<script src="/js/comments.js"></script>
