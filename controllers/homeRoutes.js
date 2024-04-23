@@ -12,6 +12,8 @@ router.get('/', async (req, res) => {
           attributes: ['username'],
         },
       ],
+      // we order them by date
+      order: ['create_on_date', 'DESC']
     });
 
 
